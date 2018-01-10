@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
 
 android {
     compileSdkVersion 26
@@ -31,4 +32,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+//添加
+publish {
+    userOrg = 'devzld'//bintray.com用户名
+    repoName = 'statuslayout'
+    groupId = 'com.devzld'//jcenter上的路径
+    artifactId = 'statuslayout'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'statuslayout'//描述，不重要
+    website = 'https://github.com/devzld/StatusLayout'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
