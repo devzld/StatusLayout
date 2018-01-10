@@ -37,7 +37,7 @@ dependencies {
 //添加
 publish {
     userOrg = 'devzld'//bintray.com用户名
-    repoName = 'statuslayout'
+    repoName = 'statuslayout'//仓库名
     groupId = 'com.devzld'//jcenter上的路径
     artifactId = 'statuslayout'//项目名称
     publishVersion = '1.0.0'//版本号
