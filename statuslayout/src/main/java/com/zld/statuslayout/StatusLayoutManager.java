@@ -169,6 +169,7 @@ public class StatusLayoutManager {
         }
 
         public Builder contentView(View contentLayoutResId) {
+            contentLayoutResId.setVisibility(View.GONE);
             parentView.removeView(contentLayoutResId);
             this.contentLayoutResId = contentLayoutResId;
             return this;

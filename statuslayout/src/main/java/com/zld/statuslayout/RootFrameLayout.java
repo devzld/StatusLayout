@@ -107,8 +107,10 @@ public class RootFrameLayout extends FrameLayout {
      *  显示内容
      */
     public void showContent() {
-        if (layoutSparseArray.get(LAYOUT_CONTENT_ID) != null)
+        if (layoutSparseArray.get(LAYOUT_CONTENT_ID) != null) {
             showHideViewById(LAYOUT_CONTENT_ID);
+
+        }
     }
 
     /**
